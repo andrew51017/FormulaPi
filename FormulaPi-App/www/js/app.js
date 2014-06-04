@@ -53,6 +53,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+	
+    .state('tab.about', {
+      url: '/about',
+      views: {
+        'tab-rc': {
+          templateUrl: 'templates/tab-about.html',
+          controller: 'AboutCtrl'
+        }
+      }
+    })
+	
+    .state('tab.video', {
+      url: '/video',
+      views: {
+        'tab-video': {
+          templateUrl: 'templates/tab-video.html',
+          controller: 'VideoCtrl'
+        }
+      }
+    })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/splash');
