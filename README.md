@@ -11,11 +11,12 @@ The following components are being developed:
 
 # Python Web App
 
-TODO. 
+* Web Application written in Python using Flask. 
+* Web Application controls the final hardware build via RPI.GPIO and ServoBlaster. 
 
 # Ionic App. 
 
-* The app will use the Ionic Framework to create a HTML5 app that will appear as a Native App. 
-* This app will then use Angular, as embedded in Ionic, to consume the services offered via the web application. 
+* The app uses the Ionic Framework to create a HTML5 app that will appear as a Native App. 
+* AngularJS is used within Ionic to consume the web service functions via AJAX. 
 
 
