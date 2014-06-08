@@ -22,14 +22,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
-
+	
+	//Main App State - use menu.html as template. 
     .state('app', {
       url: "/app",
       abstract: true,
       templateUrl: "templates/menu.html",
       controller: 'AppCtrl'
     })
-
+	//Remote Control page 
     .state('app.rc', {
       url: "/rc",
       views: {
@@ -39,7 +40,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-
+	//About page
     .state('app.about', {
       url: "/about",
       views: {
